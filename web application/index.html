@@ -17,42 +17,41 @@
                 <div class="d-flex">
                     <div class="tempConverter">
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                            <option selected>C</option>
-                            <option value="1">F</option>
-
-
+                            <option id="selectC" selected value="0">&deg;C</option>
+                            <option id="selectF" value="1">&deg;F</option>
                         </select>
                     </div>
-                    <div class="lightIcon">lightIcon </div>
+                    <div class="lightIcon" >lightIcon </div>
                     <div class="themeSwitch">
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                         </div>
                     </div>
-                    <div class="darkIcon">darkIcon</div>
+                    <div class="darkIcon"  >darkIcon</div>
                 </div>
                 <div class="row">
                     <div class="searchBar">
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input id="txtSearch" class="form-control me-2" type="search" placeholder="Search Location" aria-label="Search">
+                            <button onclick="findlocation()"  class="btn btn-outline-success"  type="button" >Search</button>
+                           
                         </form>
                     </div>
                 </div>
                 <div class="row ">
                     <div class="todayDynamicWhetherIcon">
-                        <img src="images/cloud-solid.svg " alt="">
+                        
                     </div>
                 </div>
                 <div class="row">
                     <div class="temperature">
-                        <h1>34C</h1>
+                        
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="whetherCondition">
-                        <h3>Rainy...</h3>
+                        
                     </div>
                 </div>
                 <div class="row">
@@ -63,17 +62,13 @@
                 </div>
                 <div class="row">
                     <div class="date">
-                        <h4>Monday,September 20</h4>
+                        
                     </div>
                 </div>
-                <div class="row">
-                    <div class="time">
-                        <h4>2.30 P.M</h4>
-                    </div>
-                </div>
+                
                 <div class="row">
                     <div class="cityNCountry">
-                        <h4>Tissamaharama,SL</h4>
+                        
                     </div>
                 </div>
             </div>
@@ -90,7 +85,7 @@
                             <div class="card-body">
                               <h3 class="card-title">Humidity</h3>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">35%</p>
+                              <p id="humidity" class="card-text"></p>
                               
                             </div>
                           </div>
@@ -101,7 +96,7 @@
                             <div class="card-body">
                               <h3 class="card-title">Wind</h3>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">5 m/s</p>
+                              <p id="wind" class="card-text"></p>
                               
                             </div>
                           </div>
@@ -112,7 +107,7 @@
                             <div class="card-body">
                               <h3 class="card-title">Preasure</h3>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">1000hPa</p>
+                              <p id="preasure" class="card-text"></p>
                               
                             </div>
                           </div>
@@ -131,7 +126,7 @@
                               <h5 class="card-title">Monday,September 20</h5>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
                               <p class="card-text">Rainy</p>
-                              <p class="card-text">34C</p>
+                              <p class="card-text">34&deg;C</p>
                               
                             </div>
                           </div>
@@ -143,7 +138,7 @@
                               <h5 class="card-title">Monday,September 21</h5>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
                               <p class="card-text">Rainy</p>
-                              <p class="card-text">34C</p>
+                              <p class="card-text">34&deg;C</p>
                               
                             </div>
                           </div>
@@ -155,7 +150,7 @@
                               <h5 class="card-title">Monday,September 22</h5>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
                               <p class="card-text">Rainy</p>
-                              <p class="card-text">34C</p>
+                              <p class="card-text">34&deg;C</p>
                               
                             </div>
                           </div>
@@ -174,7 +169,7 @@
                               <h5 class="card-title">Monday,September 19</h5>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
                               <p class="card-text">Rainy</p>
-                              <p class="card-text">34C</p>
+                              <p class="card-text">34&deg;C</p>
                               
                             </div>
                           </div>
@@ -186,7 +181,7 @@
                               <h5 class="card-title">Monday,September 18</h5>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
                               <p class="card-text">Rainy</p>
-                              <p class="card-text">34C</p>
+                              <p class="card-text">34&deg;C</p>
                               
                             </div>
                           </div>
@@ -198,7 +193,7 @@
                               <h5 class="card-title">Monday,September 17</h5>
                               <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
                               <p class="card-text">Rainy</p>
-                              <p class="card-text">34C</p>
+                              <p class="card-text">34&deg;C</p>
                               
                             </div>
                           </div>
