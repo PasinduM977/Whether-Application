@@ -11,47 +11,43 @@
 </head>
 
 <body>
-    <div class="contents">
+    <div class="contents bg-light">
         <div class="row m-2">
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12 ">
                 <div class="d-flex">
                     <div class="tempConverter">
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                            <option id="selectC" selected value="0">&deg;C</option>
-                            <option id="selectF" value="1">&deg;F</option>
+                            <option onclick="celcious()" id="selectC" selected value="0">&deg;C</option>
+                            <option onclick="faranhide()" id="selectF" value="1">&deg;F</option>
                         </select>
                     </div>
-                    <div class="lightIcon" >lightIcon </div>
-                    <div class="themeSwitch">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                        </div>
-                    </div>
-                    <div class="darkIcon"  >darkIcon</div>
+                    
                 </div>
-                <div class="row">
+                <div class="row h-30">
                     <div class="searchBar">
                         <form class="d-flex">
-                            <input id="txtSearch" class="form-control me-2" type="search" placeholder="Search Location" aria-label="Search">
-                            <button onclick="findlocation()"  class="btn btn-outline-success"  type="button" >Search</button>
-                           
+                            <input id="txtSearch" class="form-control me-2" type="search" placeholder="Search Location"
+                                aria-label="Search">
+                            <button onclick="findlocation()" class="btn btn-outline-success"
+                                type="button">Search</button>
+
                         </form>
                     </div>
                 </div>
-                <div class="row ">
+                <div class="row h-30 ">
                     <div class="todayDynamicWhetherIcon">
-                        
+
                     </div>
                 </div>
-                <div class="row">
+                <div class="row h-20">
                     <div class="temperature">
-                        
+
                     </div>
 
                 </div>
-                <div class="row">
+                <div class="row h-25">
                     <div class="whetherCondition">
-                        
+
                     </div>
                 </div>
                 <div class="row">
@@ -60,20 +56,20 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row h-15">
                     <div class="date">
-                        
+
                     </div>
                 </div>
-                
-                <div class="row">
+
+                <div class="row mb-5">
                     <div class="cityNCountry">
-                        
+
                     </div>
                 </div>
             </div>
-            <div class="col-8">
-                <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="row ">
                     <div class="todayDetailsHeading">
                         <h1>Today Details</h1>
                     </div>
@@ -81,36 +77,36 @@
                 <div class="d-flex">
                     <div class="humidity">
                         <div class="card" style="width: 18rem;">
-                            
+
                             <div class="card-body">
-                              <h3 class="card-title">Humidity</h3>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p id="humidity" class="card-text"></p>
-                              
+                                <h3 class="card-title">Humidity</h3>
+                                <img src="images/humidity.png" class="card-img-top " alt="...">
+                                <p id="humidity" class="card-text"></p>
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="wind">
                         <div class="card" style="width: 18rem;">
-                            
+
                             <div class="card-body">
-                              <h3 class="card-title">Wind</h3>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p id="wind" class="card-text"></p>
-                              
+                                <h3 class="card-title">Wind</h3>
+                                <img src="images/wind.png" class="card-img-top" alt="...">
+                                <p id="wind" class="card-text"></p>
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="presure">
                         <div class="card" style="width: 18rem;">
-                            
+
                             <div class="card-body">
-                              <h3 class="card-title">Preasure</h3>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p id="preasure" class="card-text"></p>
-                              
+                                <h3 class="card-title">Preasure</h3>
+                                <img src="images/pressure-gauge.png" class="card-img-top" alt="...">
+                                <p id="preasure" class="card-text"></p>
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -121,39 +117,30 @@
                 <div class="d-flex">
                     <div class="forcast1">
                         <div class="card" style="width: 18rem;">
-                            
-                            <div class="card-body">
-                              <h5 class="card-title">Monday,September 20</h5>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">Rainy</p>
-                              <p class="card-text">34&deg;C</p>
-                              
+
+                            <div id="forcast1" class="card-body">
+
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="forcast2">
                         <div class="card" style="width: 18rem;">
-                            
-                            <div class="card-body">
-                              <h5 class="card-title">Monday,September 21</h5>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">Rainy</p>
-                              <p class="card-text">34&deg;C</p>
-                              
+
+                            <div id="forcast2" class="card-body">
+
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="forcast3">
                         <div class="card" style="width: 18rem;">
-                            
-                            <div class="card-body">
-                              <h5 class="card-title">Monday,September 22</h5>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">Rainy</p>
-                              <p class="card-text">34&deg;C</p>
-                              
+
+                            <div id="forcast3" class="card-body">
+
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -164,39 +151,30 @@
                 <div class="d-flex">
                     <div class="previous1">
                         <div class="card" style="width: 18rem;">
-                            
-                            <div class="card-body">
-                              <h5 class="card-title">Monday,September 19</h5>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">Rainy</p>
-                              <p class="card-text">34&deg;C</p>
-                              
+
+                            <div id="previous1" class="card-body">
+
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="previous2">
                         <div class="card" style="width: 18rem;">
-                            
-                            <div class="card-body">
-                              <h5 class="card-title">Monday,September 18</h5>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">Rainy</p>
-                              <p class="card-text">34&deg;C</p>
-                              
+
+                            <div id="previous2" class="card-body">
+
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="privious3">
                         <div class="card" style="width: 18rem;">
-                            
-                            <div class="card-body">
-                              <h5 class="card-title">Monday,September 17</h5>
-                              <img src="images/cloud-solid.svg" class="card-img-top" alt="...">
-                              <p class="card-text">Rainy</p>
-                              <p class="card-text">34&deg;C</p>
-                              
+
+                            <div id="previous3" class="card-body">
+
+
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
